@@ -9,5 +9,7 @@ Use the nav bar to navigate the different sections of the application. The conta
 ## Credits
 I used the Space Mono font from google Fonts https://fonts.google.com/specimen/Space+Mono?query=space+mono
 
+I had to get instructor help to rebuild the app to fix problems in the original repo. Here is the link to the original repo: https://github.com/pconenna/portflio-v2 
+
 ## License 
 Please refer to the license in the repo.

@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+* {
+  background-color: #330033;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header styles */
+/* spaces nav bar flex items away from each other */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  margin: 3% 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 10%;
+}
+
+nav a {
+  flex: auto;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* about me styles */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+
+.about-me h2 {
+  flex: 1 1 auto;
+  align-self: center;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  /* font size changes with media query */
+}
+
+#face {
+  flex: 1 1 auto;
+  max-width: 15%;
+  margin: 10px;
+}
+
+#intro {
+  display: inline-block;
+  flex: 1 1 auto;
+}
+
+/* work section styles */
+#my-work {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+#my-work h2 {
+  flex: 1 1 auto;
+  align-self: center;
+}
+/* bottom images section */
+.images {
+  max-width: 80%;
+  flex: 1 1 auto;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* top image figure*/
+#bol {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  flex: 1 1 40%;
+  height: auto;
+  position: relative;
+
+
+}
+
+#bol a {
+  width: 100%;
+}
+
+#bol img {
+  flex: 1 1 100%;
+  width: 100%;
+  /* the desgin of the site is very vertical, so it is impossible to get a good pic that is wider than it is tall and resizing pics makes them look bad. it throws off the design of the work section but i can't do anything about that*/
+
+}
+
+.bol-title {
+  position: absolute;
+  color: black;
+  opacity: 50%;
+  bottom: 10%;
+  left: 10%;
+  padding: 1%;
+  font-weight: bold;
+  background-color: cyan;
+}
+/* figure encasing each bottom image */
+.bottom-fig {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 40%;
+  position: relative;
+
+}
+
+.bottom-fig img {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  bottom: 5%;
+  right: 10%
+}
+
+.images img {
+  margin: 1%;
+}
+
+/* just in case, i used https://www.w3schools.com/howto/howto_css_image_overlay_title.asp
+as a reference for the title cards  */
+
+
+/* footer styles */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+#contact-me{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* I had to do both commands to make the h2 on the contact section center itself */
+footer h2 {
+  /* flex: 1 1 auto; */
+  align-self: center;
+  /* margin-left: 35%; */
+  /* width: 100%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+/* media queries */
+@media screen and (max-width: 992px) {
+  .desc {
+      font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bottom-img {
+      flex: 1 1 50%;
   }
 }
